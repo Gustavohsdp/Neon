@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+  @media (min-width: 1280px) {
+    font-size: 50%;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden; // Para não dar scroll horizontal
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* CUSTOM SCROLLBAR */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 1rem;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(100.52deg, #00A5F0 5.63%, #00D7D7 95.75%);
+    border-radius: 1rem;
+  }
