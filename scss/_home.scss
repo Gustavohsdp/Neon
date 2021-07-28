@@ -47,7 +47,6 @@
   .area-image {
     width: 100%;
     max-width: 70.6rem;
-    margin-right: -17.4rem;
     h2 {
       margin-bottom: 6.7rem;
       text-align: center;
@@ -75,7 +74,173 @@
       }
       .circle {
         top: 2.8rem;
-        right: 4.3rem;
+        left: 4.3rem;
+      }
+    }
+  }
+}
+
+.s-card-neon {
+  padding-top: 12.9rem;
+  .container {
+    @include flex(row, flex-start, space-between);
+  }
+  .left-area {
+    width: 100%;
+    max-width: 27.7rem;
+    .ilustra-mockup {
+      width: 100%;
+      max-width: 28rem;
+      position: relative;
+      margin-bottom: 15rem;
+      .circle {
+        position: absolute;
+        z-index: -1;
+        top: 8.7rem;
+        left: -21.4rem;
+        max-width: 37.7rem;
+      }
+    }
+    .text {
+      width: 100%;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      .icon {
+        position: relative;
+        &:before{
+          content: "";
+          width: 5px;
+          height: 83px;
+          background: url("../images/points.svg") no-repeat center center;
+          position: absolute;
+          top: -104px;
+          left: 50%;
+          margin-left: -2.5px;
+        }
+      }
+      .info-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          text-align: center;
+          margin-top: 3.6rem;
+          color: $gray-600;
+        }
+        p {
+          text-align: center;
+          font-size: 1.6rem;
+          line-height: 150%;
+          color: rgba(95, 92, 107, 0.8);
+          margin-bottom: 2.6rem;
+        }
+        ul {
+          li {
+            &:not(last-child) {
+              margin-bottom: 2.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right-area {
+    width: 100%;
+    max-width: 80rem;
+    .main-text {
+      margin-bottom: 14.4rem;
+      h2 {
+        max-width: 48.2rem;
+        color: $gray-600;
+        margin-bottom: 4.9rem;
+      }
+      ul {
+        margin-bottom: 3.2rem;
+        li {
+          @include flex(row, center, space-between);
+          border-bottom: 1px solid hsla(249, 13%, 89%, 0.9);
+          padding: 3.3rem 0;
+          &:first-child {
+            padding-top: 0;
+          }
+          .info {
+            display: flex;
+            align-items: center;
+            .text {
+              margin-left: 4.3rem;
+              h3 {
+                color: $gray-400;
+              }
+              p {
+                font-size: 1.8rem;
+                line-height: 150%;
+                color: $gray-300;
+              }
+            }
+          }
+        }
+      }
+      .btn {
+        position: relative;
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 112%;
+        letter-spacing: -0.5px;
+        color: $brand-blue;
+        &::after {
+          content: "";
+          position: absolute;
+          right: -1.8rem;
+          bottom: 0;
+          width: 1rem;
+          height: 0.3rem;
+          background: $brand-yellow;
+        }
+      }
+    }
+    .box-card {
+      width: 100%;
+      height: 41rem;
+      background: url("../images/bg-box-card-neon.svg") no-repeat center center;
+      border-radius: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 5.9rem;
+      .text {
+        width: 100%;
+        max-width: 38rem;
+        h2 {
+          font-weight: bold;
+          font-size: 40px;
+          line-height: 112%;
+          letter-spacing: -1px;
+          color: #FFFFFF;
+          margin-bottom: 1.1rem;
+        }
+        h3 {
+          color: #FFFFFF;
+          max-width: 32.7rem;
+          margin-bottom: 0.8rem;
+        }
+        p {
+          font-size: 16px;
+          line-height: 150%;
+          color: #FFFFFF;
+          margin-bottom: 3.1rem;
+        }
+        .btns {
+          display: flex;
+          align-items: center;
+          gap: 1.6rem;
+        }
+      }
+      .image {
+        margin-right: -3.1rem;
       }
     }
   }
